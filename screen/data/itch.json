@@ -1,0 +1,244 @@
+{
+ "generated": "2026-10-30T08:54:35.659Z",
+ "url": "https://javier-games.itch.io",
+ "sections": [
+  "Games",
+  "Assets and Tools",
+  "Game Jams",
+  "Tests, Studies and Experiments"
+ ],
+ "projects": [
+  {
+   "id": "2964759",
+   "title": "Unloved Blessing",
+   "year": 2024,
+   "url": "https://javier-games.itch.io/unloved-blessing",
+   "text": "Oswald seeks his wife in a medieval church seized by a cult. Stealth, explore, survive!",
+   "genre": "Adventure",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/unloved-blessing.png",
+   "sections": [
+    "Games",
+    "Game Jams"
+   ]
+  },
+  {
+   "id": "1465077",
+   "title": "The Festmogul",
+   "year": 2022,
+   "url": "https://javier-games.itch.io/the-festmogul",
+   "text": "Step into the thrilling world of music festivals and become the ultimate event mogul. Print & Play!",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/the-festmogul.png",
+   "sections": [
+    "Games",
+    "Game Jams"
+   ]
+  },
+  {
+   "id": "2921179",
+   "title": "Crabbing for Home",
+   "year": 2019,
+   "url": "https://javier-games.itch.io/crabbing-for-home",
+   "text": "Help this little crab to find new shells to use as home, so that it can strive in the contaminated oceans.",
+   "genre": "Platformer",
+   "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+   ],
+   "cover": "img/itch/crabbing-for-home.png",
+   "sections": [
+    "Games",
+    "Game Jams"
+   ]
+  },
+  {
+   "id": "2917988",
+   "title": "Króneon",
+   "year": 2017,
+   "url": "https://javier-games.itch.io/kroneon",
+   "text": "Collect memories and save loved ones in the world of this time travel adventure.",
+   "genre": "Puzzle",
+   "platforms": [
+    "Windows",
+    "macOS"
+   ],
+   "cover": "img/itch/kroneon.jpg",
+   "sections": [
+    "Games"
+   ]
+  },
+  {
+   "id": "2900430",
+   "title": "Cafre",
+   "year": 2017,
+   "url": "https://javier-games.itch.io/cafre",
+   "text": "The Ultimate Mexico City Bus Driver Challenge! Can you handle the madness?",
+   "genre": "Racing",
+   "platforms": [
+    "Android"
+   ],
+   "cover": "img/itch/cafre.png",
+   "sections": [
+    "Games"
+   ]
+  },
+  {
+   "id": "3096999",
+   "title": "Memo Flash Cards",
+   "year": null,
+   "url": "https://javier-games.itch.io/memo",
+   "text": "Build your own flash card decks and boost your learning today with Memo Flash Cards.",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/memo.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3078465",
+   "title": "PropertyRefs",
+   "year": null,
+   "url": "https://javier-games.itch.io/propertyrefs",
+   "text": "Open-source Unity tool that simplifies accessing and managing component properties across Game Objects.",
+   "genre": "",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/propertyrefs.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3073952",
+   "title": "Bypass API",
+   "year": null,
+   "url": "https://javier-games.itch.io/bypass-api",
+   "text": "Tool for integrating custom request with Apple’s Shortcuts app.",
+   "genre": "",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/bypass-api.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3090061",
+   "title": "Monitoring for Unity",
+   "year": null,
+   "url": "https://javier-games.itch.io/upm-monitoring",
+   "text": "Device performance tool for Unity.",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/upm-monitoring.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3046525",
+   "title": "Bricks Bucket",
+   "year": null,
+   "url": "https://javier-games.itch.io/bricks-bucket",
+   "text": "Collection of scripts and methods designed to simplify game development.",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/bricks-bucket.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3034033",
+   "title": "Branding Template for itch.io",
+   "year": null,
+   "url": "https://javier-games.itch.io/itchio-branding",
+   "text": "Free Template Pack for Game Developers & Creators",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/itchio-branding.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "3029675",
+   "title": "Cobaya Hero",
+   "year": null,
+   "url": "https://javier-games.itch.io/cobaya-hero",
+   "text": "Assets originally designed for Cobaya Hero, a canceled mobile adventure game, are now available for purchase!",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/cobaya-hero.png",
+   "sections": [
+    "Assets and Tools"
+   ]
+  },
+  {
+   "id": "1422095",
+   "title": "The Blooderhood",
+   "year": 2022,
+   "url": "https://javier-games.itch.io/the-blooderhood",
+   "text": "Battle game where two races, Humans and Vampires, confronts each other in groups rolling dice in order to survive.",
+   "genre": "",
+   "platforms": [],
+   "cover": "img/itch/the-blooderhood.png",
+   "sections": [
+    "Game Jams"
+   ]
+  },
+  {
+   "id": "3071628",
+   "title": "The Dark Knight",
+   "year": null,
+   "url": "https://javier-games.itch.io/the-dark-knight",
+   "text": "A VFX study of a scene from The Dark Knight (2008).",
+   "genre": "",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/the-dark-knight.jpg",
+   "sections": [
+    "Tests, Studies and Experiments"
+   ]
+  },
+  {
+   "id": "3009813",
+   "title": "smplsmplr",
+   "year": null,
+   "url": "https://javier-games.itch.io/smplsmplr",
+   "text": "Seamless music transitions experiment.",
+   "genre": "",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/smplsmplr.png",
+   "sections": [
+    "Tests, Studies and Experiments"
+   ]
+  },
+  {
+   "id": "3009680",
+   "title": "Revelations Trail",
+   "year": null,
+   "url": "https://javier-games.itch.io/revelations-trail",
+   "text": "Test for a tower defense game where monsters defends their castles against a religious invasion.",
+   "genre": "Strategy",
+   "platforms": [
+    "Web"
+   ],
+   "cover": "img/itch/revelations-trail.png",
+   "sections": [
+    "Tests, Studies and Experiments"
+   ]
+  }
+ ]
+}

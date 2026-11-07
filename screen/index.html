@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javier García — Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fraunces: the name only · Nunito Sans: real content · JetBrains Mono: placeholders -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Nunito+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon: JG on the paper (files in apps/room/static, shared by the screen site) -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Laid out on a fixed 1952 x 992 canvas: the size of the terminal's screen (MonitorScreen.ts). Scaled to fit when opened on its own. -->
+    <div class="canvas" id="canvas">
+        <div class="paper"></div>
+        <div class="dots"></div>
+
+
+        <!-- STAGE: the body of the screen, everything left of the aside. Its content is swapped per section
+             (home, projects, reel...); it has its own coordinate space, so anything centred in it ignores the aside. -->
+        <main class="stage" id="stage" data-section="home">
+            <!-- slide 1: profile — the ink portrait, readouts and the scanner reticle with its leader lines -->
+            <section class="section section-home is-active" data-title="PROFILE" aria-label="Profile">
+            <!-- ink figure: Javier (IMG_2962, cut out and converted to ink) blown into spray paint -->
+            <svg class="ink" viewBox="0 0 1392 992" aria-hidden="true">
+                <!-- baked artwork: mist + sprayed portrait + smear, rendered from art/home-ink.html by scripts/bake-ink.mjs
+                     (live SVG filters here were too heavy on phones) -->
+                <image href="img/home-mist.webp" x="0" y="0" width="1392" height="992"/>
+                <image href="img/home-figure.webp" x="380" y="170" width="640" height="822"/>
+                <!-- scanner reticle on the figure; the leader lines (canvas chrome) aim at it -->
+                <g transform="translate(652 662)">
+                    <circle r="58" fill="none" stroke="var(--mint)" stroke-width="2" stroke-dasharray="3 5"/>
+                    <circle r="34" fill="none" stroke="var(--red)" stroke-width="3"/>
+                    <circle r="12" fill="#fff"/><circle r="12" fill="none" stroke="var(--red)" stroke-width="2"/>
+                    <g fill="var(--orange)"><circle cx="40" cy="-30" r="4"/><circle cx="58" cy="10" r="4"/><circle cx="-20" cy="44" r="4"/></g>
+                </g>
+            </svg>
+            <!-- readouts -->
+            <div class="readouts">
+                <div><small>SYS</small><b>73</b></div><div><small>T</small><b class="mid" id="clock">00:00:00</b></div>
+                <div><small>LNK</small><b>05</b></div><div><small>BLD</small><b class="mid">11</b></div>
+                </div>
+            <!-- leader lines across the canvas, like a scanner tracing its target -->
+            <svg class="leaders" viewBox="0 0 1952 992" aria-hidden="true">
+                <g stroke="var(--orange)" stroke-width="1.5" fill="none" opacity="0.85">
+                    <path d="M74 470 L596 654"/><path d="M74 476 L596 654" opacity="0.4"/>
+                    <path d="M706 668 L1330 580 L1400 580"/>
+                </g>
+                <g fill="var(--orange)"><rect x="66" y="452" width="5" height="40"/></g>
+                <text x="92" y="463" class="tiny">+06</text>
+            </svg>
+            </section>
+
+            <!-- slide 2: GitHub — filled by gh.js from data/github.json (snapshotted by scripts/fetch-github.mjs) -->
+            <section class="section gh gh-a" data-title="GITHUB" aria-label="GitHub activity"></section>
+
+            <!-- slide 3: itch.io projects (itch.js) -->
+            <section class="section gh it" data-layout="grid" data-title="PROJECTS" aria-label="Projects"></section>
+
+            <!-- carousel pager: one dot per slide, built by screen.js -->
+            <nav class="pager" aria-label="Slides"></nav>
+        </main>
+
+        <!-- CHROME (fixed on every slide): name badge, aside, frame -->
+
+        <div class="clockbox"><span class="dot"></span><span class="dot"></span><b>JAVIER.GAMES</b></div>
+
+        <!-- top left: name badge -->
+        <header class="alert">
+            <span class="alert-text">JAVIER GARCÍA<small>GAME DEVELOPER</small></span>
+        </header>
+
+        <!-- right: quick access to the external sites (what bio.site used to do), drawn as a blueprint after IMG_1471 -->
+        <aside class="quick" aria-labelledby="quick-title">
+            <div class="bp-head"><b id="quick-title">QUICK.ACCESS // LINKS 05/05</b><span class="bp-size"></span></div>
+            <nav class="bp-list">
+                <a class="bp-btn" href="https://vimeo.com/798235214" target="_blank" rel="noopener"><span class="dim"></span><span class="n">01</span><b>REEL</b><span class="url">vimeo.com/798235214</span></a>
+                <a class="bp-btn" href="https://www.linkedin.com/in/javier-games" target="_blank" rel="noopener"><span class="dim"></span><span class="n">02</span><b>LINKEDIN</b><span class="url">linkedin.com/in/javier-games</span></a>
+                <a class="bp-btn" href="https://github.com/javier-games" target="_blank" rel="noopener"><span class="dim"></span><span class="n">03</span><b>GITHUB</b><span class="url">github.com/javier-games</span></a>
+                <a class="bp-btn" href="https://javier-games.itch.io" target="_blank" rel="noopener"><span class="dim"></span><span class="n">04</span><b>ITCH.IO</b><span class="url">javier-games.itch.io</span></a>
+                <a class="bp-btn" href="https://www.behance.net/javier-games" target="_blank" rel="noopener"><span class="dim"></span><span class="n">05</span><b>BEHANCE</b><span class="url">behance.net/javier-games</span></a>
+            </nav>
+            <div class="bp-foot">5 LINKS · TARGET _BLANK · OPENS IN A NEW TAB</div>
+        </aside>
+
+        <!-- corner frame marks -->
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="foot tiny">1952 × 992 &nbsp; t+<span id="uptime">0.0</span>s &nbsp;·&nbsp; JG-OS 73</div>
+    </div>
+    <script src="screen.js"></script>
+    <script src="gh.js"></script>
+    <script src="itch.js"></script>
+    <script src="bridge.js"></script>
+</body>
+</html>
